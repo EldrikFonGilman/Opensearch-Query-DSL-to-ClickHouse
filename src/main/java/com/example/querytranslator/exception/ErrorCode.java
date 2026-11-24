@@ -1,0 +1,6 @@
+package com.example.querytranslator.exception;
+
+public enum ErrorCode {
+    INVALID_REQUEST, UNKNOWN_TABLE, UNKNOWN_FIELD, UNSUPPORTED_OPERATOR,
+    UNSUPPORTED_QUERY, INVALID_QUERY, REQUEST_TOO_LARGE, INTERNAL_ERROR
+}

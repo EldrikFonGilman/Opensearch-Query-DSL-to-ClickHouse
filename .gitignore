@@ -1,0 +1,30 @@
+# Maven build output
+target/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+out/
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Logs and local configuration/secrets
+*.log
+.env
+.env.*
+!.env.example
+
+# Generated reports and office artifacts
+*.docx
+*.pdf
+
+# Keep only the project documentation intended for GitHub.
+*.md
+!/README.md
+!/ТЗ.md
+!/Изучение аналогов.md

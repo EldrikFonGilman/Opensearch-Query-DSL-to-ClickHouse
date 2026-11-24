@@ -1,0 +1,29 @@
+query-translator:
+  limits:
+    request-size-bytes: 1048576
+    nesting-depth: 10
+    terms-values: 1000
+    wildcard-length: 1024
+  tables:
+    windows_logs:
+      fields:
+        timestamp: TIMESTAMP
+        source: STRING
+        message: STRING
+        EventID: NUMBER
+    linux_logs:
+      fields:
+        timestamp: TIMESTAMP
+        source: STRING
+        message: STRING
+        process_name: STRING
+    network_logs:
+      fields:
+        timestamp: TIMESTAMP
+        source: STRING
+        message: STRING
+        protocol: STRING
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
